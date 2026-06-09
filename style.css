@@ -413,7 +413,13 @@ a {
 }
 
 .hidden-field {
-  display: none;
+  display: none !important;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .info-table {
