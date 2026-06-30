@@ -6,6 +6,58 @@
     <title>概要・運営者情報 | HANTA.NET PC再生工房</title>
     <meta name="description" content="HANTA.NET PC再生工房の運営者情報。所在地、事業内容、古物商許可情報、運営方針について。" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .license-display {
+        margin-top: 28px;
+        padding: clamp(22px, 4vw, 34px);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 12px 34px rgba(0, 0, 0, 0.06);
+      }
+
+      .license-display h2 {
+        margin: 0 0 18px;
+        font-size: clamp(1.55rem, 3vw, 2.2rem);
+      }
+
+      .license-display dl {
+        display: grid;
+        gap: 0;
+        margin: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .license-display div {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 18px;
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .license-display dt {
+        color: var(--mid);
+        font-weight: 900;
+      }
+
+      .license-display dd {
+        margin: 0;
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .operator-name::before {
+        content: "\5742\5C3E\0020\5E78\6210";
+      }
+
+      @media (max-width: 560px) {
+        .license-display div {
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -35,6 +87,17 @@
           <div><dt>お問い合わせ</dt><dd><a href="mailto:info@hanta-net.com">info@hanta-net.com</a></dd></div>
           <div><dt>古物商許可</dt><dd>山形県公安委員会<br />第241080000821号</dd></div>
         </dl>
+
+        <div class="license-display" id="kobutsu-display">
+          <p class="section-label">License</p>
+          <h2>古物商法に基づく表示</h2>
+          <dl>
+            <div><dt>氏名又は名称</dt><dd><span class="operator-name" aria-hidden="true"></span></dd></div>
+            <div><dt>屋号</dt><dd>HANTA.NET PC再生工房</dd></div>
+            <div><dt>許可公安委員会</dt><dd>山形県公安委員会</dd></div>
+            <div><dt>許可証番号</dt><dd>第241080000821号</dd></div>
+          </dl>
+        </div>
       </section>
 
       <section class="section muted-section">
