@@ -30,15 +30,40 @@
     <main>
       <section class="page-hero">
         <p class="eyebrow">Contact</p>
-        <h1>商品・修理・お取引のご相談など、お気軽にお問い合わせください。</h1>
-        <p>内容を確認のうえ、順次返信いたします。直接メールでのご連絡も受け付けています。</p>
+        <h1>分からないことは、お気軽にご相談ください。</h1>
+        <p>商品についての質問やお取引のご相談を受け付けています。内容を確認のうえ、順次返信いたします。</p>
+      </section>
+
+      <section class="section muted-section">
+        <div class="section-heading">
+          <p class="section-label">Consultation</p>
+          <h2>このようなご相談を受け付けています。</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">💻</span>
+            <h3>商品について</h3>
+            <p>仕様、付属品、状態など、購入前に気になる点をご相談ください。</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">🔧</span>
+            <h3>パソコンについて</h3>
+            <p>再生・整備内容など、分からないことがあればお問い合わせください。</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">🤝</span>
+            <h3>お取引について</h3>
+            <p>事業者様からのお取引案内やご提案も受け付けています。</p>
+          </article>
+        </div>
       </section>
 
       <section class="section contact-layout">
         <div class="contact-note">
-          <h2>メールでのお問い合わせ</h2>
+          <span class="card-icon" aria-hidden="true">✉️</span>
+          <h2>メールでもご連絡いただけます</h2>
           <p><a href="mailto:info@hanta-net.com">info@hanta-net.com</a></p>
-          <p>電話番号の入力は任意です。メールでのご連絡を基本としております。</p>
+          <p>電話番号は空欄でも送信できます。通常はメールで返信いたします。</p>
         </div>
 
         <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
@@ -48,25 +73,25 @@
           </p>
           <label>
             お名前
-            <input type="text" name="name" autocomplete="name" required />
+            <input type="text" name="name" autocomplete="name" placeholder="例：山田 太郎" required />
           </label>
           <label>
             メールアドレス
-            <input type="email" name="email" autocomplete="email" required />
+            <input type="email" name="email" autocomplete="email" placeholder="例：name@example.com" required />
           </label>
           <label>
             電話番号 <span>任意</span>
-            <input type="tel" name="phone" autocomplete="tel" />
+            <input type="tel" name="phone" autocomplete="tel" placeholder="例：090-1234-5678" />
           </label>
           <label>
             お問い合わせ内容
-            <textarea name="message" rows="8" required></textarea>
+            <textarea name="message" rows="8" placeholder="商品名やご相談内容をご記入ください" required></textarea>
           </label>
           <label class="checkbox-label">
             <input type="checkbox" name="privacy" value="同意する" required />
             <span><a href="privacy.html">個人情報の取り扱い</a>に同意する</span>
           </label>
-          <button class="button button-dark" type="submit">送信する</button>
+          <button class="button button-dark" type="submit">入力内容を送信する</button>
         </form>
       </section>
     </main>
